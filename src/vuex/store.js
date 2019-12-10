@@ -46,7 +46,7 @@ const actions = {
   },
   yibujia({commit}){
     setTimeout(() => {
-      commit('jian')
+      commit('jia')
     }, 1000);
   }
 }
