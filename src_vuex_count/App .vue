@@ -1,7 +1,7 @@
 <template>
   <div>
     App
-   <p>click {{$store.state.count}} times, count is {{$store.getters.evenOrOdd}}</p>
+   <p>click {{count}} times, count is {{evenOrOdd}}</p>
    <button @click="increment">+</button>
    <button @click="decrement">-</button>
    <button @click="incrementIfOdd">increment if odd</button>
@@ -23,9 +23,12 @@
     
 
     computed: {
-      evenOrOdd () {
-        return this.count %2 === 1 ? '奇数' : '偶数'
-      }
+      count(){
+        return this.$store.state.count
+      },
+      evenOrOdd(){
+        return this.$store.getters.evenOrOdd
+      },
     },
 
     methods: {
