@@ -58,7 +58,7 @@ import {mapState, mapActions, mapGetters, mapMutations} from 'vuex'
         increment:'jia',
         decrement:'jian'
       }),
-      ...mapActions({
+      ...mapActions({ 
         incrementIfOdd:'oddjia',
         incrementAsync:'yibujia'
       })
